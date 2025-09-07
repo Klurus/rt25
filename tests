@@ -1,0 +1,3 @@
+source cloudinit.conf
+
+openstack --insecure server list
