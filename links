@@ -1,0 +1,23 @@
+ • https://docs.ansible.com/ansible/latest/collections/community/general/apt_rpm_module.html
+ • https://docs.ansible.com/ansible/latest/collections/ansible/builtin/systemd_module.html
+ • https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html
+ • https://docs.ansible.com/ansible/latest/collections/community/docker/docker_image_build_module.html
+ • https://docs.ansible.com/ansible/latest/collections/community/docker/docker_container_module.html
+ • https://docs.ansible.com/ansible/latest/collections/ansible/builtin/stat_module.html
+ • https://docs.ansible.com/ansible/latest/collections/community/postgresql/postgresql_user_module.html
+ • https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html
+ • https://docs.ansible.com/ansible/latest/collections/ansible/builtin/script_module.html
+ • https://cyberprotect.ru/documentation/backup
+ • https://docs.cyberprotect.ru/ru-RU/CyberBackup/17.4/user/#unattended-installation-or-uninstallation-in
+linux.html?Highlight=автоматическая
+
+
+ • настройка RDP для altlinux (https://www.altlinux.org/Xrdp)
+ • примерыконфигурационных файлов cloud-init (https://cloudinit.readthedocs.io/en/latest/reference/examples.html)
+ • документация к OpenStack-провайдеру для Terraform (https://docs.selectel.ru/terraform/openstack-provider-reference/)
+ • консольный клиент для работы с OpenStack API (https://docs.selectel.ru/cloud-servers/tools/openstack/)
+ • документация openstack-cli (https://docs.openstack.org/mitaka/cli-reference/openstack.html)
+ • подключение к интерфейсу командной строки OpenStack в рамках Кибер Инфраструктуры (https://docs.cyberprotect.ru/ru
+RU/CyberInfrastructure/6.7/admin/#connecting-to-openstack-command-line-interface.html?Highlight=openstack)
+ • использование утилиты vinfra (https://docs.cyberprotect.ru/ru-RU/CyberInfrastructure/6.7/admin/#using-the-command-line
+interface.html
