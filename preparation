@@ -1,0 +1,9 @@
+https://hashicorp-releases.yandexcloud.net/
+
+wget → unzip → mv to /usr/local/bin
+
+python3-module-openstackclient python3-module-pip
+
+pip3 install python-octaviaclient
+pip3 install python-cinderclient
+pip3 install python-novaclient
