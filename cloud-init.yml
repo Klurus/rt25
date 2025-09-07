@@ -11,5 +11,5 @@ users:
     sudo: ALL=(ALL) NOPASSWD:ALL
     groups: wheel
     shell: /bin/bash
-    ssh_authorized_keys: 
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDR9LqOi8WwVmomKErevDesflRuTElyBl7Wh6vJERWhOa6Lh8ag8jQTZJCOd/gdZLfr9rgeu0DkMNw9nLX5342VakAsjTjz/gAZFbotSOxlArlHHVF5g1qsv8sbp9GLqFhNc/vyuNaAtd3vree2EbeMgJCTDj1vVbf2CKPrqM4RIns4XDwcE7gO8kql4Xa71NsGivi0euFLOUulDWiyk6uEHzI8Eg+Ujm9YxTQiqzc3x+Pa5IGnLIu6tujZNlAejSfYtVL9YkrvEGHVH6NmRAbpot7L0/FIWqU6JF2YvhIiSsb+z2T9TMFFnKuqyfr1e9yIUtw3qpte5r4wNhtncOX5 altlinux@cloud-adm
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdA7Xwyz91nIsQyWGbXRHcUMCjwnx8a0+ueMhme8Jr62etReNzbS4Zq8AI3/KLpdX+E5hWBG2idkRuh3ozF5Tl2SUgm4noiL9/uvHRAx2J6rH5wjAOx6uIbzsA6V2dSyneMUEggLBY6VvjexFMBMmq57KcLEpOVL522tuyRweb6mOXgGULIsLdDXtWSGhwZb5Pp7pA61V0K5hoPOwJ247y8jSEIm1K9BY8k8V53DaVnMm09jWnmJ0/m/sS8hY00cF7tM4fFnGgx/Qysk3KtuTYZd68lPnEHDWRtYbQZbYhWZKEn+K+ufw0O/wWzlJgcIt4QTn0gm+P9UMyDvaCPx3F altlinux@cloud-adm
