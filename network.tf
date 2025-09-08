@@ -1,22 +1,32 @@
-resource "openstack_networking_port_v2" "port_vm_game" {
-    count          = var.vm_game_count
-    name           = "port_vm_game0${count.index + 1}"
+resource "openstack_networking_port_v2" "port_vm_acm" {
+    name           = "port_vm_acm"
     network_id     = var.network_id
     admin_state_up = true
 
     fixed_ip {
         subnet_id   = var.subnet_id
-        ip_address  = "10.10.10.10${count.index + 1}"
+        ip_address  = "192.168.1.21"
     }
 }
 
-resource "openstack_networking_port_v2" "haproxy" {
-    name           = "port_vm_haproxy"
+resource "openstack_networking_port_v2" "port_vm_db" {
+    name           = "port_vm_db"
     network_id     = var.network_id
     admin_state_up = true
 
     fixed_ip {
         subnet_id   = var.subnet_id
-        ip_address  = "10.10.10.100"
+        ip_address  = "192.168.1.22"
+    }
+}
+
+resource "openstack_networking_port_v2" "port_vm_bar" {
+    name           = "port_vm_bar"
+    network_id     = var.network_id
+    admin_state_up = true
+
+    fixed_ip {
+        subnet_id   = var.subnet_id
+        ip_address  = "192.168.1.23"
     }
 }
