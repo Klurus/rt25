@@ -2,6 +2,10 @@ https://hashicorp-releases.yandexcloud.net/
 
 wget → unzip → mv to /usr/local/bin
 
+xrdp (altdocs)
+
+
+
 python3-module-openstackclient python3-module-pip
 
 pip3 install python-octaviaclient
@@ -9,7 +13,9 @@ pip3 install python-cinderclient
 pip3 install python-novaclient
 pip3 install ansible
 
-source cloudinit.conf
+source cloudinit.conf (доступ к api)
+
+openstack --insecure {} list
 
 export PATH=/home/altlinux/.local/bin:$PATH
 export ANSIBLE_HOME=$(pwd)
