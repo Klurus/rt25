@@ -5,22 +5,22 @@
     - name: Install PostgreSQL
       community.general.apt_rpm:
         name:
-          - postgresql16
-          - postgresql16-server
+          - postgresql16 
+          - postgresql16-server 
           - postgresql16-contrib
           - python3-module-psycopg2
         state: present
         update_cache: true
 
-    - name: Check if PostgreSQL in instialized
-      ansible.builtin.stat:
+    - name: Check if PostgreSQL is instialized
+      ansible.builtin.stat: 
         path: "/var/lib/pgsql/data/pg_hba.conf"
       register: postgres_data
 
     - name: Initialize PostgreSQL
       ansible.builtin.command:
         cmd: su -l postgres -s /bin/sh -c "/usr/bin/initdb --pgdata=/var/lib/pgsql/data"
-      when:
+      when: 
         - not postgres_data.stat.exists
 
     - name: Started and enabled PostgreSQL
@@ -40,7 +40,7 @@
       become_user: postgres
 
     - name: Copy file postgresql.conf
-      ansible.builtin.tempalte:
+      ansible.builtin.template:
         src: files/postgresql.conf
         dest: /var/lib/pgsql/data/postgresql.conf
       notify:
@@ -52,7 +52,6 @@
         dest: /var/lib/pgsql/data/pg_hba.conf
       notify:
         - Restarted PostgreSQL
-
 
   handlers:
     - name: Restarted PostgreSQL
