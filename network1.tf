@@ -1,3 +1,4 @@
+
 resource "openstack_networking_port_v2" "port_vm_game" {
     count          = var.vm_game_count
     name           = "port_vm_game0${count.index + 1}"
@@ -6,7 +7,7 @@ resource "openstack_networking_port_v2" "port_vm_game" {
 
     fixed_ip {
         subnet_id   = var.subnet_id
-        ip_address  = "192.168.1.1${count.index + 1}"
+        ip_address  = "10.10.10.10${count.index + 1}"
     }
 }
 
@@ -17,6 +18,6 @@ resource "openstack_networking_port_v2" "haproxy" {
 
     fixed_ip {
         subnet_id   = var.subnet_id
-        ip_address  = "192.168.1.10"
+        ip_address  = "10.10.10.100"
     }
 }
