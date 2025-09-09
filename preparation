@@ -13,12 +13,15 @@ pip3 install python-cinderclient
 pip3 install python-novaclient
 pip3 install ansible
 
+export PATH=/home/altlinux/.local/bin:$PATH
+export ANSIBLE_HOME=$(pwd)
+
+
 source cloudinit.conf (доступ к api)
 
 openstack --insecure {} list
 
-export PATH=/home/altlinux/.local/bin:$PATH
-export ANSIBLE_HOME=$(pwd)
+terraform init (проверка провайдера + создание файлов)
 
 
 -------------------------------------------------------------------------------------------------
