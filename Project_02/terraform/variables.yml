@@ -59,3 +59,36 @@ variable "public_network_name" {
         type = string
         default = "public"
 }
+
+variable "flavor_id_acm" {
+        type = string
+        default = "101"
+}
+
+# openstack --insecure subnet list
+variable "disk_size_acm" {
+        type = number
+        default = "20"
+}
+
+variable "flavor_id_db" {
+        type = string
+        default = "d45876be-371b-4f35-b511-624a10442e62"
+}
+
+# openstack --insecure subnet list
+variable "disk_size_db" {
+        type = number
+        default = "20"
+}
+
+variable "flavor_id_bar" {
+        type = string
+        default = "f0a74551-ec6e-42cc-96e7-6403989d17ea"
+}
+
+# openstack --insecure subnet list
+variable "disk_size_bar" {
+        type = number
+        default = "10"
+}
