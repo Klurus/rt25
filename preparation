@@ -9,6 +9,8 @@ pip3 install python-cinderclient
 pip3 install python-novaclient
 pip3 install ansible
 
+source cloudinit.conf
+
 export PATH=/home/altlinux/.local/bin:$PATH
 export ANSIBLE_HOME=$(pwd)
 
