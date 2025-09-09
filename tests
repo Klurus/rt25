@@ -1,5 +1,1 @@
-source cloudinit.conf
 
-openstack --insecure server list
-
-ssh-keygen -t rsa
