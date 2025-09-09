@@ -4,7 +4,7 @@
   tasks:
     - name: Install docker
       community.general.apt_rpm:
-        name:
+        name: 
           - docker-engine
           - docker-buildx
         state: present
