@@ -7,3 +7,37 @@ python3-module-openstackclient python3-module-pip
 pip3 install python-octaviaclient
 pip3 install python-cinderclient
 pip3 install python-novaclient
+pip3 install ansible
+
+export PATH=/home/altlinux/.local/bin:$PATH
+export ANSIBLE_HOME=$(pwd)
+
+
+-------------------------------------------------------------------------------------------------
+docker build -t 2048-game:v2 .
+docker run —name 2048-game -d -p 8002:80 2048-game:v2
+
+ansible-galaxy collection install community.docker --force
+
+openssl req -x509 -sha256 -days 3653 -newkey rsa:2048 -keyout ca.key -out ca.crt
+rootca.au.team
+
+openssl genrsa -out game.key 2048
+openssl req -key game.key -new -out game.csr
+game.au.team
+
+cat <<EOF > game.ext
+> authorityKeyIdentifier=keyid,issuer
+> basicConstraints=CA:FALSE
+> subjectAltName=@alt_names
+> [alt_names]
+> DNS.1=game.au.team
+> IP.1=10.10.10.100
+> EOF
+
+openssl x509 -req -CA ca.crt -CAkey ca.key -in game.csr -out game.crt -days 365 -CAcreateserial -extfile game.ext
+
+sudo cp ca.crt /etc/pki/ca-trust/source/anchors/
+sudo update-ca-trust
+
+cat game.key  game.crt > game.pem
