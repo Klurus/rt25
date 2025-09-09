@@ -1,0 +1,7 @@
+- hosts: acn-server
+  become: true
+
+  tasks:
+    - name: Install ACM-Server
+      ansible.builtin.script:
+        cmd: files/CyberBackup_17_64-bit.x86_64 -a -i AcronisCentralizedManagementServer --force-postgres --postgres-user=cyberbackup --postgres-password=cyberbackup --postgres-host=10.10.10.22 --postgres-port=5432 --nodeps
