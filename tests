@@ -1,1 +1,3 @@
 ansible -i inventory.yml -m ping all
+
+ansible-playbook -i inventory.yml playbook_hosts.yml
