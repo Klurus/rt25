@@ -5,7 +5,7 @@ resource "openstack_networking_port_v2" "port_vm_acm" {
 
     fixed_ip {
         subnet_id   = var.subnet_id
-        ip_address  = "192.168.1.21"
+        ip_address  = "10.10.10.21"
     }
 }
 
@@ -16,7 +16,7 @@ resource "openstack_networking_port_v2" "port_vm_db" {
 
     fixed_ip {
         subnet_id   = var.subnet_id
-        ip_address  = "192.168.1.22"
+        ip_address  = "10.10.10.22"
     }
 }
 
@@ -27,6 +27,6 @@ resource "openstack_networking_port_v2" "port_vm_bar" {
 
     fixed_ip {
         subnet_id   = var.subnet_id
-        ip_address  = "192.168.1.23"
+        ip_address  = "10.10.10.23"
     }
 }
