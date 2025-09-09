@@ -1,1 +1,1 @@
-
+ansible -i inventory.yml -m ping all
